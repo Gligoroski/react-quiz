@@ -10,6 +10,7 @@
 
 # production
 /build
+DateCounter.js
 
 # misc
 .DS_Store
