@@ -1,12 +1,10 @@
 import { useEffect } from "react";
-import { useQuizContext } from "../contexts/QuizContext";
 
 function leftFillNum(num, targetLength) {
   return num.toString().padStart(targetLength, "0");
 }
 
-function Timer() {
-  const { secondsRemaining, dispatch } = useQuizContext();
+function Timer({ secondsRemaining, dispatch }) {
   const mins = leftFillNum(Math.floor(secondsRemaining / 60), 2);
   const seconds = leftFillNum(secondsRemaining % 60, 2);
 

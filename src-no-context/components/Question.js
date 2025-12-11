@@ -1,8 +1,7 @@
-import { useQuizContext } from "../contexts/QuizContext";
 import Options from "./Options";
 
-function Question() {
-  const { question, dispatch, answer } = useQuizContext();
+function Question({ question, dispatch, answer }) {
+  // if (answer === question.correctOption) return <div>Pogodok</div>;
   return (
     <div>
       <h4> {question.question}</h4>
